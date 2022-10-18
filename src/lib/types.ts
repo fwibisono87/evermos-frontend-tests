@@ -19,6 +19,7 @@ export type ProductCardData = {
 
 export interface ProductData extends ProductCardData {
     headline: string,
+    imageURLS: string[],
     variants: variant[]
     selectedVariantIndex: number 
     relatedInfo: string,
