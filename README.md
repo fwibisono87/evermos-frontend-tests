@@ -1,5 +1,7 @@
 # Evermos Case Study
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a0f1a46b-3a70-46d0-a43f-8d4e4fb930d9/deploy-status)](https://app.netlify.com/sites/darling-cendol-ab81fb/deploys)
+
 This repository is created for my interview into Evermos. The prompt is as follows.
 
 > Case:
