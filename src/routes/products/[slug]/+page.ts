@@ -8,8 +8,6 @@ export async function load({ params }) {
 	const data: ProductData = await getProduct(id);
 
 	return {
-		title: 'Hello world!',
-		content: 'Welcome to our blog. Lorem ipsum dolor sit amet...',
 		slug: params.slug,
 		product: data
 	};

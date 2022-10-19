@@ -4,6 +4,11 @@
 	import Tags from '$components/Tags.svelte';
 	import Variants from '$components/Variants.svelte';
 	import { currentVariantId } from '$lib/stores';
+  import { onDestroy } from 'svelte';
+
+  onDestroy(() => {
+    currentVariantId.set(0)
+  })
 </script>
 
 <head>
