@@ -1,10 +1,7 @@
-export type TagData = {
-    title: string;
-}
-
 export type variant = {
 	name: string;
-	status: 'selected' | 'unselected' | 'disabled';
+    isSelected: boolean;
+    isDisabled: boolean;
 	price: number;
 	description: string;
 };
@@ -14,11 +11,12 @@ export type ProductCardData = {
     name: string,
     defaultPrice: number,
     imageURL: string,
-    tags: TagData[],
+    tags: string[],
 }
 
 export interface ProductData extends ProductCardData {
     headline: string,
+    imageURLS: string[],
     variants: variant[]
     selectedVariantIndex: number 
     relatedInfo: string,
