@@ -25,7 +25,7 @@
 	</div>
 	<div class="p-2 gap-2 flex flex-col mx-2 h-full">
 		<Tags data={productCardData.tags} />
-		<div class="flex flex-col h-full justify-between my-2">
+		<div class="flex flex-col h-full justify-between mt-2">
 			<h3 class="text-md font-semibold">
 				{productCardData.name}
 			</h3>
