@@ -5,11 +5,7 @@
 
 	$: currentVariantId = 0;
 </script>
-
-<!-- <h1>{data.title}</h1>
-<span>{data.slug}</span>
-<span>{data.data.name}</span>
-<div>{@html data.content}</div> -->
+<meta title="{data.product.name}" />
 
 <div
 	class="flex flex-col md:flex-row bg-white w-full md:max-w-6xl mx-auto p-4 gap-6 md:gap-0 min-h-screen"

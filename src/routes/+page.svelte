@@ -11,6 +11,7 @@
 		loaded = true;
 	});
 </script>
+<meta title="Catalog" />
 
 {#if !loaded}
 	<div class="flex flex-col mx-auto my-auto ">
