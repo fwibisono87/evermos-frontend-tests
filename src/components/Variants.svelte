@@ -11,7 +11,7 @@
 	import { currentVariantId } from '$lib/stores';
 </script>
 
-<div class="flex flex-row gap-2">
+<div class="flex flex-row gap-2 flex-wrap">
 	{#each variantsData as varData, i}
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<div
