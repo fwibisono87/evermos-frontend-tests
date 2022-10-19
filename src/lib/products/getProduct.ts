@@ -1,13 +1,18 @@
-import type { ProductData } from "../types"
-import {} from "svelte/store";
+import type { ProductData } from '../types';
+import { get } from 'svelte/store';
+import { products } from '../stores';
 
 export default async function getAllProducts(id: number): Promise<ProductData> {
-    const url = `https://my-json-server.typicode.com/fwibisono87/evermos-db/products/${id}`;
-		console.log(url);
+	const url = `https://my-json-server.typicode.com/fwibisono87/evermos-db/products/${id}`;
+	let data;
+	try {
 		const resp = await fetch(url, {
 			method: 'GET'
-        })
-	const data = await resp.json()
-	return data
+		});
+		data = await resp.json();
+	} catch {
+		console.log('fetching error!, attempting to use local');
+		data = get(products)[id];
+	}
+	return data;
 }
-
