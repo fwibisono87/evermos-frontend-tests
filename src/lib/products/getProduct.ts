@@ -12,7 +12,9 @@ export default async function getAllProducts(id: number): Promise<ProductData> {
 		data = await resp.json();
 	} catch {
 		console.log('fetching error!, attempting to use local');
+		console.log(get(products));
 		data = get(products)[id];
+		
 	}
 	return data;
 }

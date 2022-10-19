@@ -37,6 +37,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@macfja/svelte-persistent-store": "^2.2.1",
 		"tailwind-scrollbar": "2.1.0-preview.0"
 	}
 }
