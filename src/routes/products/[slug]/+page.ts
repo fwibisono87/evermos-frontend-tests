@@ -1,4 +1,3 @@
-import { error } from '@sveltejs/kit';
 import getProduct from '$lib/products/getProduct';
 import type { ProductData } from '$lib/types';
 

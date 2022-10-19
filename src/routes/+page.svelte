@@ -12,7 +12,7 @@
 	});
 </script>
 <head>
-  <title>Catalog</title>
+	<title>Catalog</title>
 </head>
 
 {#if !loaded}
@@ -22,6 +22,7 @@
 	</div>
 {:else}
 	<div class="flex flex-row flex-wrap gap-5 mx-auto my-6">
+		<!-- {$products} -->
 		{#each $products as product}
 			<ProductCard productCardData={product} />
 		{/each}
