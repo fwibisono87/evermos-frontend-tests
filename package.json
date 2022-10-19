@@ -37,7 +37,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@netlify/functions": "github:netlify/functions",
 		"tailwind-scrollbar": "2.1.0-preview.0"
 	}
 }

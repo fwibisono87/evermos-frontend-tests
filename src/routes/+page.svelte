@@ -7,7 +7,8 @@
 
 	let loaded = false;
 	onMount(async () => {
-		await getAllProducts().then(() => (loaded = true));
+		await getAllProducts();
+		loaded = true
 	});
 </script>
 

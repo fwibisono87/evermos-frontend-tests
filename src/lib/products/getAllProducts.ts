@@ -1,8 +1,7 @@
-import type { ProductData } from "../types"
 import { products } from "$lib/stores";
 import {} from "svelte/store";
 
-export default void async function getAllProducts() {
+export default async function getAllProducts() {
     const url = 'https://my-json-server.typicode.com/fwibisono87/evermos-db/products/';
 		console.log(url);
 		const resp = await fetch(url, {
