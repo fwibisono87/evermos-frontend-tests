@@ -1,3 +1,25 @@
-<div>
-    
-</div>
+<script lang="ts">
+	import { onMount } from 'svelte';
+	import getAllProducts from '$lib/products/getAllProducts';
+	import { products } from '$lib/stores';
+	import ProductCard from '$components/ProductCard.svelte';
+	import LineMdLoadingAltLoop from '~icons/line-md/loading-alt-loop'
+
+	let loaded = false;
+	onMount(async () => {
+		await getAllProducts().then(() => (loaded = true));
+	});
+</script>
+
+{#if !loaded}
+	<div class="flex flex-col mx-auto my-auto ">
+		<LineMdLoadingAltLoop class="mx-auto w-12 h-12"/>
+        <h2 class="text-xl font-semibold">Loading</h2>
+	</div>
+{:else}
+	<div class="grid grid-cols-5">
+		{#each $products as product}
+			<ProductCard productCardData={product} />
+		{/each}
+	</div>
+{/if}

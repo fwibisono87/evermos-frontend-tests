@@ -23,9 +23,9 @@
 			class="h-[90%] max-w-[90%] mx-auto my-auto"
 		/>
 	</div>
-	<div class="p-2 gap-2 flex flex-col mx-2">
+	<div class="p-2 gap-2 flex flex-col mx-2 h-full">
 		<Tags data={productCardData.tags} />
-		<div class="flex flex-col gap-1">
+		<div class="flex flex-col h-full justify-between my-2">
 			<h3 class="text-md font-semibold">
 				{productCardData.name}
 			</h3>
